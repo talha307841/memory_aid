@@ -8,7 +8,7 @@ Setup Instructions
 Clone the repository and navigate to the project directory:
 bash
 Copy code
-git clone https://github.com/your-repo/memory-creator.git
+git clone https://github.com/your-repo/memory-aid.git
 cd memory-creator
 Install the dependencies:
 bash
