@@ -1,3 +1,20 @@
+# AI-Based Memory Creator
+
+This Python project captures images every 15 minutes (simulated), generates a summary using OpenAI's GPT, compresses the images to save space, and stores them in a vectorized database (FAISS). The system allows for secure searching of memories by time and returns a summary, timestamp, and location.
+
+## Features
+- **Image Capture**: Simulated using OpenCV, but can be integrated with real smart glasses.
+- **Summarization**: Uses OpenAI GPT to describe the captured images.
+- **Image Compression**: Resizes images and reduces their quality to save space.
+- **Vectorized Memory Storage**: Memories (image + metadata) are stored in FAISS for fast retrieval.
+- **Memory Search**: Retrieve specific memories by timestamp.
+
+## Requirements
+
+The project requires Python 3.7+ and the following dependencies listed in `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
 Dependencies
 openai: GPT model for text generation.
 opencv-python: For image handling and capture simulation.
