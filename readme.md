@@ -1,4 +1,4 @@
-# AI-Based Memory Creator
+# AI-Based Memory Aid
 
 This Python project captures images every 15 minutes (simulated), generates a summary using OpenAI's GPT, compresses the images to save space, and stores them in a vectorized database (FAISS). The system allows for secure searching of memories by time and returns a summary, timestamp, and location.
 
