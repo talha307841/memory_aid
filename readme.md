@@ -1,6 +1,6 @@
 # AI-Based Memory Aid
 
-This Python project captures images every 15 minutes (simulated), generates a summary using OpenAI's GPT, compresses the images to save space, and stores them in a vectorized database (FAISS). The system allows for secure searching of memories by time and returns a summary, timestamp, and location.
+This Python project captures images every 15 minutes (simulated),especially those with memory disabilities, by creating an AI-based system that captures images, generates detailed summaries, and stores memories securely. It automatically takes a picture every 15 minutes (simulated in this project), uses OpenAI's GPT to write a description of the image, compresses it to save space, and stores both the image and its details in a vectorized database (FAISS). Users can easily search for past memories by giving a time, and the system will provide a detailed summary of that memory. This generates a summary using OpenAI's GPT, compresses the images to save space, and stores them in a vectorized database (FAISS). The system allows for secure searching of memories by time and returns a summary, timestamp, and location.
 
 ## Features
 - **Image Capture**: Simulated using OpenCV, but can be integrated with real smart glasses.
