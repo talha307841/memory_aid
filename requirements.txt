@@ -1,0 +1,5 @@
+openai==0.27.0
+opencv-python==4.5.3.56
+geopy==2.2.0
+faiss-cpu==1.7.2
+numpy==1.21.2
