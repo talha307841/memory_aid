@@ -60,7 +60,7 @@ memory-creator/
 ├── captured_images/        # Directory where images are stored
 ├── requirements.txt        # List of dependencies
 ├── README.md               # Project documentation
-└── memory_creator.py       # Main Python script for capturing and storing memories
+└── main.py       # Main Python script for capturing and storing memories
 Future Enhancements
 Smart Glasses Integration: Replace the simulated OpenCV image capture with real smart glasses API.
 Security Enhancements: Add encryption and authentication to secure memory access.
