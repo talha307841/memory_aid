@@ -1,0 +1,30 @@
+{
+  "builds": [
+    {
+      "src": "web/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "api/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "api/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "web/$1"
+    }
+  ],
+  "functions": {
+    "api/main.py": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "PYTHON_VERSION": "3.9"
+  }
+}

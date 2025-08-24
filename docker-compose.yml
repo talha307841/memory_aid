@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  memoryaid:
+    build: .
+    ports:
+      - "3000:3000"  # Frontend
+      - "8000:8000"  # Backend API
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - DEMO_MODE=true
+      - CAPTURE_INTERVAL_SECONDS=30
+      - MEMORY_API_KEY=demo_key_12345
+    volumes:
+      - memoryaid_data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  memoryaid_data:
+    driver: local
